@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+.d-flex {
+    display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.align-items-center {
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.justify-content-center {
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.vh-100 {
+    height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+ul li {
+    list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li {
+    margin-bottom: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav > li {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font: bolder 1rem Arial, sans-serif;
+    color: black;
+}
+
+.nav > li:not(:last-child) {
+    margin-right: 5px;
+}
+
+.nav a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+.nav li:has(> a.active) {
+    background: blue;
+    color: aliceblue;
+}
+
+.wrapper {
+    max-width: 87.5rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+.factors {
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.factors-list h5 {
+    font-size: 1.5rem;
+    margin: 20px 0;
 }
