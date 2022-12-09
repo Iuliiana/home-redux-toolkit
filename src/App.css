@@ -19,7 +19,7 @@ ul li {
 }
 
 li {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 header {
@@ -33,14 +33,14 @@ header {
 }
 
 .nav > li {
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
     font: bolder 1rem Arial, sans-serif;
     color: black;
 }
 
 .nav > li:not(:last-child) {
-    margin-right: 5px;
+    margin-right: 0.5rem;
 }
 
 .nav a {
@@ -66,11 +66,51 @@ h1 {
 .factors {
     max-width: 30rem;
     margin: 0 auto;
-    padding: 10px;
+    padding: .5rem;
     box-sizing: border-box;
 }
 
 .factors-list h5 {
     font-size: 1.5rem;
-    margin: 20px 0;
+    margin: 1rem 0;
+}
+
+.profile {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.profile-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.profile-form input {
+    margin: 1rem 0;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.profile-photo__main {
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.profile-photo__other {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 2;
+}
+
+.profile-photo__main img,
+.profile-photo__other img {
+    /*width: 200px;*/
+    /*height: 200px;*/
+    padding-bottom: 2rem;
 }
